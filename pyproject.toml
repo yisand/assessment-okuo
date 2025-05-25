@@ -1,0 +1,15 @@
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+fix = true
+exclude = ["build", "dist", ".venv", ".mypy_cache", "__pycache__"]
+select = [
+    "E",    # pycodestyle (PEP8)
+    "F",    # pyflakes
+    "I",    # isort
+    "UP",   # pyupgrade
+    "C90",  # mccabe (complejidad ciclomática)
+    "N",    # pep8-naming
+    "B",    # flake8-bugbear
+]
+
