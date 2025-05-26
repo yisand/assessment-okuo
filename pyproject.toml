@@ -12,4 +12,29 @@ select = [
     "N",    # pep8-naming
     "B",    # flake8-bugbear
 ]
+lint.extend-ignore = ["N806", "N803"]
 
+
+[tool.black]
+line-length = 100
+target-version = ['py312']
+include = '\.py$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.mypy_cache
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+ignore_missing_imports = true
+exclude = "tests|build"
+show_error_codes = true
+warn_return_any = true
+warn_unused_configs = true
