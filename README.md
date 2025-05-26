@@ -136,3 +136,4 @@ Este repositorio usa las siguientes herramientas:
 - [ ] Automatizar entrenamiento del módelo de recomendación con DAG o Lambda
 - [ ] Crear API REST con FastAPI para exponer el modelo
 - [ ] Integrar CI/CD (GitHub Actions)
+- [ ] Añadir pruebas unitarias con librerias como pytest o unittest
